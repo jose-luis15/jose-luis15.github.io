@@ -1,0 +1,108 @@
+.contact{
+    background-color: rgb(21, 80, 95);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.contact-contenido{
+    color: var(--text-color-inverse);
+    font-size: 18px;
+    
+    /* Usra grid */
+    display: grid;
+    gap: 25px; /* Separación vertical */
+}
+
+.contact-contenido p,
+.contact-contenido h2,
+.contact-contenido ul{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-title{
+    color: var(--titulos-1);
+    text-transform: uppercase;
+}
+
+label{
+    font-weight: 500;
+}
+
+.contact-form{
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form-group{
+    display: grid;
+    gap: 3px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contact-form textarea{
+    height: auto;
+    resize: vertical;
+}
+
+.contact-form-submit{
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--text-color);
+    border-radius: 7px;
+    color: var(--text-color-inverse);
+    border: 1px solid var(--theme-color);
+    cursor: pointer;
+}
+
+.contact-form-submit:hover{
+    box-shadow: 0 0 14px var(--hover-color);
+}
+
+.social-list{
+    text-align: center;
+}
+
+.social-list a{
+    padding: 0 15px;
+    font-size: 40px;
+    color: var(--text-color-inverse);
+}
+
+.social-list a:hover{
+    color: var(--hover-color);
+    transition: color 0.3s;
+}
+
+@media (min-width: 950px){
+    .contact{
+        margin-top: 0;
+    }
+
+    .contact-section{
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        width: 100%;
+        margin-top: 75px;
+    }
+
+    .contact-contenido{
+        margin-top: 25px;
+        width: 69%;
+    }
+}

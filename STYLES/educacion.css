@@ -1,0 +1,61 @@
+/* EDUCACIÓN */
+.education{
+    background-color: rgb(109, 23, 102);
+}
+
+.primera-parte{
+    margin-bottom: 40px;
+}
+
+.education-line {
+    background-color: var(--theme-color);
+    height: 0.5px;
+    width: 80%;
+    margin: 0 auto;
+    }
+
+@media (min-width: 950px){
+    .education-line {
+    background-color: var(--theme-color);
+    height: 0.5px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    }
+}   
+
+
+/* EXPERIENCIA LABORAL */
+.experiencia{
+    background-color: black;
+}
+
+.experiencia a{
+    color: var(--hover-color);
+    font-weight: 550;
+    font-size: 22px;
+}
+
+.calendar{
+    font-style: normal;
+    color: var(--theme-color);
+    font-size: 14px;
+}
+
+.labor{
+    font-style: normal;
+    color: var(--theme-color);
+}
+
+.experiencia a:hover{
+    color: var(--theme-color);
+}
+
+
+/* PIE DE PÁGINA */
+.pie-pagina{
+    height: 150px;
+    background-color: rgb(25, 26, 20);
+}

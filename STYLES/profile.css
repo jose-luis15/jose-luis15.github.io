@@ -1,0 +1,108 @@
+.foto{
+    width: 60%;
+    max-width: 350px;
+    border-radius: 50%;
+    background: url("../IMAGENES/Fondo.png") no-repeat;
+}
+
+.inicio{
+    background-color: black;
+}
+
+.inicio-contenido{
+    margin-top: 75px;
+}
+
+.inicio-imagen{
+    text-align: center;
+}
+
+
+.inicio-imagen h2{
+    color: var(--titulos-1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.personal-information{
+    text-align: left;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.input{
+    color: var(--sections-color);
+    margin-right: 10px;
+    text-align: right;
+    width: 50%;
+}
+
+.answers{
+    width: 50%;
+}
+
+.about h2{
+    color: var(--titulos-1);
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.about-introduccion h2{
+    color: var(--text-color-inverse);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.about-introduccion p{
+    font-size: 18px;
+}
+
+
+/* VISTA DE ESCRITORIO */
+@media (min-width: 950px){    
+    .inicio-contenido {
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 980px;
+        display: flex;
+        width: 100%;
+        margin-bottom: 75px;
+        margin-top: 75px;
+    }
+
+    .about-introduccion h2{
+        margin-top: 0;
+    }
+
+    .inicio-imagen{
+        width: 31%;
+    }
+
+    .foto{
+        width: 70%;
+    }
+
+    .inicio-imagen h2{
+        font-size: 18px;
+    }
+    
+    .personal-information{
+        font-size: 14px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .input{
+        text-align: left;
+        margin-right: 2px;
+    }
+    
+    .answers{
+        width: 60%;
+    }
+}

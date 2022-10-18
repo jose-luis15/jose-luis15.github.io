@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPerez</title>
+    <!-- Añadimos la fuente del texto desde https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Añadimos la librería normalize, permite que el CSS se vea casi igual en todos los anvegadores -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="STYLES/main.css">
+    <link rel="stylesheet" href="STYLES/navbar.css">
+    <link rel="stylesheet" href="STYLES/inicio.css">
+    <link rel="stylesheet" href="STYLES/profile.css">
+    <link rel="stylesheet" href="STYLES/contact.css">
+    <link rel="stylesheet" href="STYLES/educacion.css">
+
+    <script defer src="JS/app.js"></script>
+    <script defer src="JS/iconos.js"></script>
+</head>
+
+<body>
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">
+                <img height="50" width="50p" src="IMAGENES/perfil.png" alt="developer">
+                <div>
+                    Jose Luis <br>
+                </div>
+            </a>
+            <button class="open-menu" aria-label="Abrir menu">
+                <img src="IMAGENES/hamburger-icon.svg" alt="abrir menu">
+            </button>
+            <ul class="menu">
+                <button class="close-menu" aria-label="cerrar menu">
+                    <img src="IMAGENES/close-icon.svg" alt="cerrar menu">
+                </button>
+                <li><a href="#profile" class="selected">Inicio</a></li>
+                <li><a href="#inicio">Perfil</a></li>
+                <li><a href="#education">Resumen</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#news">Entrevistas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="profile" id="profile">
+        <section class="profile-contenido" id="profile">
+            <div class="profile-banner">
+                <h1>Jose Luis Perez</h1>
+                <div class="banner-detail">
+                    <p>Bachiller en Ingeniería Geográfica de la
+                        <a class="profile-link" href="https://www.unmsm.edu.pe/">
+                            Universidad Nacional Mayor de San Marcos</a>
+                        con mención en Geomática y Ordenamiento
+                        Territorial. Conocimiento en lenguajes de
+                        programación, topografía,
+                        geodesia, Sistemas de información
+                        geográfica y gestión del territorio.
+                    </p>
+                </div>
+                <div class="banner-line"></div>
+                <div class="banner-redes">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+            <div class="profile-flecha">
+                <li><a href="#inicio"><i class="fa-solid fa-circle-chevron-down"></i></a></li>
+            </div>
+        </section>
+    </div>
+
+    <div class="inicio contenedor">
+        <section class="inicio-contenido contenedor-section" id="inicio">
+            <div class="inicio-imagen">
+                <img src="IMAGENES/perfil.png" alt="programador" class="foto">
+                <h2>Información personal</h2>
+                <div class="personal-information">
+                    <div class="input">
+                        <p>
+                            Ciudad de origen:<br />
+                            Edad:<br />
+                            Nacionalidad:<br />
+                            Estado civil:<br />
+                        </p>
+                    </div>
+                    <div class="answers">
+                        <p>
+                            Villa Rica-Oxapampa<br />
+                            25 años<br />
+                            peruana<br />
+                            Soltero<br />
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about contenedor-contenido">
+                <div class="about-introduccion">
+                    <h2 class="hola">Hola</h2>
+                    <p>
+                        Soy Jose Luis, ingeniero geógrafo de profesión de la Decana de América.<br /><br />
+                        Aficionado a la programación y la tecnología, con actitud proactiva, trabajo en equipo,
+                        compromiso y
+                        constante
+                        interés de aprendizaje. Tengo conocimientos en Lenguajes de Programación, Topografía,
+                        Geodesia, Sistemas de Información Geográfica(SIG) y Gestión del Territorio.
+                    </p>
+                </div>
+                <div class="about-logros">
+                    <h2>Logros</h2>
+                    <li><a href="">Segundo puesto en el examen de admisión de la UNMSM</a><br />Año 2017 - Escuela
+                        Profesional de
+                        Ing. Geográfica</li>
+                    <li><a href="">Becado por PRONABEC</a><br />Beca permanencia 2019</li>
+                    <li><a href="">Seleccionado para realizar una Pasantía Académica Internacional</a><br />Universidad
+                        de Chile,
+                        semestre 2021</li>
+                    <li><a href="">Tercer puesto / Décimo superior</a><br />Base 17 Ing. Geográfica - UNMSM</li>
+                    <li><a href="">Elegido como Consejero Universitario de la UNMSM</a><br />Periodo 2020 - 2021</li>
+                    <li><a href="">Elegido como Asambleista Universitario de la UNMSM</a><br />Periodo 2021 - 2022</li>
+                    <li><a href="">Ganador de una mención honrosa en el Premio Nacional de la Juventud</a><br />Concurso
+                        organizado
+                        por la Secretaría Nacional de la Juventud - 2021</li>
+                </div>
+                <div class="about-proyectos">
+                    <h2>Proyectos</h2>
+                    <li><a href="">Mapa de oxígeno medicinal</a></li>
+                    <li><a href="">Geoportal de demarcación territorial del distrito de Villa Rica</a></li>
+                    <li><a href="">Geoportal de la Gerencia de Desarrollo Social - GORE Callao</a></li>
+                    <li><a href="">Ejercicios en código R</a></li>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="education contenedor" id="education">
+        <div class="resumen">
+            <section class="primera-parte education-section contenedor-section" id="education">
+                <div class="education-title sub-titulo">
+                    <h2>Educación</h2>
+                </div>
+                <div class="education-contenido contenedor-contenido">
+                    <li><a href="">Universidad Nacional Mayor de San Marcos</a><br />
+                        Ingeniería Geográfica - 2017 al 2022<br />
+                        Especialiación en Geomática y Ordenamiento Territorial
+                    </li>
+                    <li><a href="">Universidad de Chile</a><br />
+                        Pasantía Académica - Primer Semestre 2021
+                    </li>
+                    <li><a href="">I.E N°34418 Santa Apolonia - Villa Rica</a><br />
+                        Educación secundaria
+                    </li>
+                </div>
+            </section>
+            <div class="education-line"></div>
+            <section class="contenedor-section" id="education">
+                <div class="sub-titulo">
+                    <h2>Ponencias</h2>
+                </div>
+                <div class="contenedor-contenido">
+                    <li><a href="">I Ciclo de Cconferencias Internacional de la Escuela Profesional de Ingeniería
+                            Geográfica</a><br />
+                        E.P. Ingeniería Geográfica de la Universidad Nacional Mayor de San Marcos, 3 de enero del 2022
+                    </li>
+                    <li><a href="https://www.facebook.com/FlorPabloMedina/videos/635062764181989">Mesa de trabajo “Voces
+                            de
+                            estudiantes universitarios sobre la pandemia y el retorno”</a><br />
+                        Mesa de trabajo con la Ex ministra de educación y Congresista de la república Flor Pablo Medina,
+                        21
+                        de setiembre del 2021
+                    </li>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="experiencia contenedor" id="experience">
+        <section class="contenedor-section" id="experience">
+            <div class="sub-titulo">
+                <h2>Experiencia Laboral</h2>
+            </div>
+            <div class="contenedor-contenido">
+                <li><a href="">Universidad Nacional Mayor de San Marcos</a><br />
+                    <div class="calendar ">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Nov. 2019 - Feb. 2021
+                    </div>
+                    <div class="labor">
+                        Consejero Universitario
+                    </div>
+                    Encargado del apoyo en la gestión, dirección y ejecusión académica y administrativa de la
+                    universidad. Integrante de la Comision de Normas
+                </li>
+                <li><a href="">Universidad Nacional Mayor de San Marcos</a><br />
+                    <div class="calendar">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Feb. 2021 - Jun. 2021
+                    </div>
+                    <div class="labor">
+                        Asambleista Universitario
+                    </div>
+                    Dirigir las políticas generales de la universidad a travéz de su evaluación y aprobación.
+                </li>
+                <li><a href="">OXIMAP</a><br />
+                    <div class="calendar">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Set. 2020 - Mar. 2022
+                    </div>
+                    <div class="labor">
+                        Voluntario en la Dirección de Tecnologías de la Información e Innovación
+                    </div>
+                    Encargado de la administración de la plataforma y demas productos digitales de OXIMAP.
+                </li>
+                <li><a href="">Gobierno Regional del Callao</a><br />
+                    <div class="calendar">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Ago. 2021 - Ene. 2022
+                    </div>
+                    <div class="labor">
+                        Practicante preprofesional
+                    </div>
+                    Encargado del apoyo tecnológico y gestión de la información geográfica de la Gerencia
+                    Regional de Desarrollo Social.
+                </li>
+                <li><a href="">GTD Perú</a><br />
+                    <div class="calendar">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Feb. 2022 - Actualidad
+                    </div>
+                    <div class="labor">
+                        Practicante profesional
+                    </div>
+                    Procesamiento de planos y archivos de proyectos, Control de Bases de datos y atención de
+                    factibilidades.
+                </li>
+            </div>
+        </section>
+    </div>
+
+    <div class="education contenedor" id="news">
+        <section class="contenedor-section" id="news">
+            <div class="sub-titulo">
+                <h2>Entrevistas y Noticias</h2>
+            </div>
+            <div class="contenedor-contenido">
+                <li><a href="https://www.facebook.com/1551UNMSM/photos/pcb.3152769778127585/3152750764796153/">
+                        Representantes del tercio estudiantil recibieron hoy sus credenciales
+                    </a><br />
+                    11 de noviembre del 2019, Universidad Nacional Mayor de San Marcos
+                </li>
+                <li><a
+                        href="https://www.pronabec.gob.pe/noticias/jose-luis-el-futuro-ingeniero-que-suena-con-llevar-oxigeno-a-todo-el-peru/">
+                        José Luis, el futuro ingeniero que sueña con llevar oxígeno a todo el Perú
+                    </a><br />
+                    9 de noviembre del 2020, Programa Nacional de Becas y Crédito Educativo | PRONABEC
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=A-KrjldNvfc">
+                        Conoce al talento Pronabec que participa en el desarrollo de Oximap y ”Oxígeno para mi prójimo
+                    </a><br />
+                    28 de enero del 2021, Programa Nacional de Becas y Crédito Educativo | PRONABEC
+                </li>
+                <li><a href="https://youtu.be/leStaxHiexo?t=9033">
+                        Generación del Bicentenario opina sobre los políticos
+                    </a><br />
+                    16 de noviembre del 2020, ATV Noticias
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=Ioj52fuUBmc&t=4651s">
+                        Comisión de Educación verá proyecto sobre Ley Universitaria
+                    </a><br />
+                    13 de noviembre del 2020, ATV Noticias
+                </li>
+                <li><a
+                        href="https://andina.pe/agencia/noticia-pronabec-conoce-al-futuro-ingeniero-suena-llevar-oxigeno-a-todo-peru-820924.aspx">
+                        José Luis, el futuro ingeniero que sueña con llevar oxígeno a todo el Perú
+                    </a><br />
+                    10 de noviembre del 2020, Andina Noticias
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=OwfqSTOoCrE">
+                        Mención Honrosa: OXIMAP
+                    </a><br />
+                    27 de setiembre del 2021, Secretaría Nacional de la Juventud Perú
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=vzVKCTGkKNQ">
+                        ¿Dónde RECARGAR OXÍGENO? | OXIMAP | Mapa del Oxígeno
+                    </a><br />
+                    22 de setiembre del 2020, Help Gis
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=FSO4j8iU95E">
+                        Así negocian las vacantes en universidades: mafia ofrecía ingreso directo a casa de estudios
+                    </a><br />
+                    18 de abril del 2022, Latina.pe - Punto Final
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=YxY0qTRNfo4">
+                        Congresistas aprobaron ley que desbarata autonomía de la SUNEDU
+                    </a><br />
+                    9 de mayo del 2022, Latina.pe - Punto Final
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=G-pvaaAWw-k">
+                        EXAMEN VIRTUAL UNMSM: En Vivo con José Luis Perez - Consejero Universitario de UNMSM
+                    </a><br />
+                    30 de agosto del 2020, La Biología te Hará Libre
+                </li>
+            </div>
+        </section>
+    </div>
+
+    <div class="contact">
+        <section class="contenedor-section" id="contact">
+            <div class="contact-title">
+                <h2>contacto</h2>
+            </div>
+            <div class="contact-contenido">
+                <form class="contact-form" action="https://formsubmit.co/cca86bd34eac3fc21ce3fefd1dae3f4b"
+                    method="POST">
+                    <div class="contact-form-group">
+                        <label for="name">Nombre</label>
+                        <input required type="text" name="name" id="name">
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="email">Email</label>
+                        <input required type="email" id="email" name="email">
+                    </div>
+                    <div class="contact-form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea required name="message" id="message" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-form-submit" value="enviar">Enviar</button>
+
+                    <input type="hidden" name="_next" value="http://localhost:8000/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                <nav class="social">
+                    <ul class="social-list">
+                        <i><a href="" class="fa-brands fa-linkedin"></a></i>
+                        <i><a href="" class="fa-solid fa-envelope"></a></i>
+                        <i><a href="" class="fa-brands fa-square-whatsapp"></a></i>
+                        <i><a href="" class="fa-brands fa-facebook-messenger"></a></i>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </div>
+
+    <div class="pie-pagina contenedor">
+    </div>
+</body>
+
+</html>

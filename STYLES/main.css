@@ -1,0 +1,127 @@
+/* Crear variables de color en CSS */
+:root{
+    --theme-color: rgb(255, 255, 255);
+    --primary-color: #124f88;
+    --secundary-color: #F7C331;
+    --text-color-inverse: white;
+    --text-color: rgb(0, 0, 0);
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+    --background-description-color: #25272f;
+    --menu-color: #F06000;
+    --hover-color: #11aab0;
+    --titulos-1:#048ABF;
+    --sections-color: #838c95;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--te-color);
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.horizontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 950px){
+    .horizontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+
+
+/* ESTILOS GENERALES PARA LAS SECCIONES */
+.contenedor{
+    text-align: justify;
+    color: var(--text-color-inverse);
+    line-height: 1.3;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sub-titulo{
+    color: var(--titulos-1);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.contenedor-contenido p,
+.contenedor-contenido h2,
+.contenedor-contenido ul{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor li{
+    color: var(--sections-color);
+    font-size: 18px;
+    font-style: oblique;
+    margin-bottom: 15px;
+}
+
+.contenedor a{
+    color: var(--text-color-inverse);
+    font-style: normal;
+    font-size: 18px;
+}
+
+.contenedor a:hover{
+    color: var(--hover-color);
+    transition: color 0.3s;
+}
+
+
+/* Vista de escritorio */
+@media (min-width: 950px){
+    .contenedor-section{
+        display: flex;
+        justify-content: space-between;
+        max-width: 980px;
+        width: 100%;
+        margin-top: 75px;
+        margin-bottom: 75px;
+    }
+
+    .contenedor-contenido{
+        margin-top: 25px;
+        width: 69%;
+    }
+}

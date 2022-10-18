@@ -1,0 +1,124 @@
+.topheader{
+    position: fixed; /* barra de menu fija */
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.topnav{
+    display: flex; /* Poner elemntos en Fila */
+    justify-content: space-between; /* Distribuir los elementos en el espacio existente */
+    padding: 10px;
+    max-width: 980px; /* Ancho max */
+    margin: 0 auto;
+}
+
+
+/* LOGO */
+.logo{
+    display: flex;
+    align-items: center; /* Elementos centrados en el eje horizontal*/
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.logo div{
+    padding:0 10px;
+}
+
+.logo img{
+    border-radius: 50%;
+} 
+
+
+/* MENU */
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    padding: 0 15px;
+}
+
+.menu a{
+    color: var(--text-color-inverse);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px; /* Central los elementos verticalmente */
+    text-transform: uppercase; /* Poner en mayúscula los textos */
+    position:relative;
+    padding: 8px 13px;
+    text-shadow: 0 0 2px #000000, 0 0 2px #000000;
+}
+
+.menu a.selected{
+    color: var(--menu-color);
+    transition: color 0.3s;
+}
+
+/* BOTONES DE MENU EN DISPOSITIVO DE ESCRITORIO */
+.open-menu, .close-menu{
+    display: none;
+}
+
+/* BOTONES DE MENU EN DISPOSITIVO MOBIL */
+@media (max-width:950px){
+    /* MENU */
+    .menu{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        height: 100%;
+        overflow-y: auto;
+        opacity: 0;
+        pointer-events: none;
+        transition:opacity 0.3s;
+    }
+    
+    .menu li{
+        padding: 0;
+    }
+    
+    .menu a{
+        color: var(--text-color-inverse);
+        line-height: 70px; /* Central los elemntos verticalmente */
+        font-size: 25px;
+    }    
+
+    /* BOTONES DE MENU EN MOBILE */
+    .open-menu, .close-menu{
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .close-menu{
+        align-self: flex-end; /* Alineado al final */
+        padding: 20px 15px;
+    }
+
+    .menu_opened{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Evitar que el icono se enmarque en un cuadrado al pasar el cursor por encima */
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible){
+        outline: none;
+    }
+
+    .menu a.selected{
+        color: var(--menu-color);
+        transition: color 0.3s;
+    }
+}
