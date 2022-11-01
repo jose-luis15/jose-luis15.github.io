@@ -43,6 +43,34 @@
     width: 50%;
 }
 
+/* BOOTON DESCARGAR CV */
+.dowload{
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+.dowload lang{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.dowload a:hover{
+    color: var(--text-color);
+}
+
+.dowload-buttom {
+    background: #444;
+    margin-top: 6px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dowload-buttom:hover {
+    background-color: var(--theme-color);
+}
+
 .about h2{
     color: var(--titulos-1);
     text-transform: uppercase;

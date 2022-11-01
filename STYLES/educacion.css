@@ -1,6 +1,6 @@
 /* EDUCACIÓN */
 .education{
-    background-color: rgb(109, 23, 102);
+    background-color: rgb(19, 24, 44);
 }
 
 .primera-parte{
@@ -29,7 +29,7 @@
 
 /* EXPERIENCIA LABORAL */
 .experiencia{
-    background-color: black;
+    background-color: rgb(23, 22, 22);
 }
 
 .experiencia a{
@@ -56,6 +56,15 @@
 
 /* PIE DE PÁGINA */
 .pie-pagina{
-    height: 150px;
-    background-color: rgb(25, 26, 20);
+    height: 200px;
+    background-color: var(--text-color);
+    text-align: center;
+}
+
+.pie-pagina p{
+    margin-top: 50px;
+}
+
+.pie-pagina i{
+    font-size: 50px;
 }

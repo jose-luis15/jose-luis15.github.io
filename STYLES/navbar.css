@@ -15,9 +15,9 @@
 
 
 /* LOGO */
-.logo{
+/* .logo{
     display: flex;
-    align-items: center; /* Elementos centrados en el eje horizontal*/
+    align-items: center; 
     font-size: 18px;
     font-weight: 500;
     color: var(--primary-color);
@@ -29,7 +29,7 @@
 
 .logo img{
     border-radius: 50%;
-} 
+}  */
 
 
 /* MENU */
@@ -75,7 +75,7 @@
         top: 0;
         width: 100%;
         align-items: center;
-        background-color: var(--menu-mobile-background-color);
+        background-color: var(--fondo-color);
         height: 100%;
         overflow-y: auto;
         opacity: 0;
@@ -99,6 +99,17 @@
         border: none;
         background: none;
         cursor: pointer;
+        margin-left: auto;
+    }
+
+    .open-menu i{
+        color: var(--menu-color);
+        font-size: 30px;
+    }
+
+    .close-menu i{
+        color: var(--text-color-inverse);
+        font-size: 30px;
     }
 
     .close-menu{

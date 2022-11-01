@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="STYLES/profile.css">
     <link rel="stylesheet" href="STYLES/contact.css">
     <link rel="stylesheet" href="STYLES/educacion.css">
+    <link rel="stylesheet" href="STYLES/skills.css">
 
     <script defer src="JS/app.js"></script>
     <script defer src="JS/iconos.js"></script>
@@ -26,23 +27,24 @@
 <body>
     <header class="topheader">
         <nav class="topnav">
-            <a href="#" class="logo">
+            <!-- <a href="#" class="logo">
                 <img height="50" width="50p" src="IMAGENES/perfil.png" alt="developer">
                 <div>
                     Jose Luis <br>
                 </div>
-            </a>
+            </a> -->
             <button class="open-menu" aria-label="Abrir menu">
-                <img src="IMAGENES/hamburger-icon.svg" alt="abrir menu">
+                <i class="fa-solid fa-bars" alt="abrir menu"></i>
             </button>
             <ul class="menu">
                 <button class="close-menu" aria-label="cerrar menu">
-                    <img src="IMAGENES/close-icon.svg" alt="cerrar menu">
+                    <i class="fa-solid fa-x" alt="cerrar menu"></i>
                 </button>
                 <li><a href="#profile" class="selected">Inicio</a></li>
                 <li><a href="#inicio">Perfil</a></li>
                 <li><a href="#education">Resumen</a></li>
                 <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#news">Entrevistas</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
@@ -99,6 +101,13 @@
                             Soltero<br />
                         </p>
                     </div>
+                </div>
+
+                <div class="dowload">
+                    <a href="#contact" class="dowload-buttom">
+                        <i class="fa fa-download"></i>
+                        <lang> Solicitar CV</lang>
+                    </a>
                 </div>
             </div>
 
@@ -246,6 +255,104 @@
         </section>
     </div>
 
+    <div class="habilidades contenedor">
+        <section class="contenedor-section" id="skills">
+            <div class="sub-titulo">
+                <h2>Habilidades</h2>
+            </div>
+
+            <div class="contenedor-contenido">
+                <li class="categorias-skills"><a href="">Idiomas</a><br />
+                    Acabé el Portugués el año pasado y estoy actualmente en el intermedio 8 del Inglés.
+                </li>
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Inglés</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="ingles-barra"></div>
+                    </div>
+                </div>
+    
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Portugués</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="portugues-barra"></div>
+                    </div>
+                </div>
+
+
+                <li class="categorias-skills"><a href="">Softwares</a><br />
+                    Debido a mi formación, tengo conocimientos en softwares 
+                    enfocados a los Sistemas de Información Geográfica(SIG) y administración 
+                    de datos para proyectos y toma de decisiones en múltiples sectores
+                </li>
+    
+                <div class="skills">
+                    <div class="detalles">
+                        <span>ArcMap, Qgis, Google Earth Pro</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="arcgis-barra"></div>
+                    </div>
+                </div>
+    
+                <div class="skills">
+                    <div class="detalles">
+                        <span>ArcGIS Online, Global Mapper, Envi, AutoCAD, Topcon Tools</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="autocad-barra"></div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Power Bi, MsProject, Word, Excel, PowerPoint, Photoshop</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="microsoft-barra"></div>
+                    </div>
+                </div>
+
+
+                <li class="categorias-skills"><a href="">Lenguajes de programación</a><br />
+                    Tengo también conocimientos en algunos lenguajes de programación, enfocados 
+                    a los Sistemas de Información Geográfica y el desarollo de aplicaciones a pequeña y mediana escala.
+                </li>
+    
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Python, R</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="python-barra"></div>
+                    </div>
+                </div>
+    
+                <div class="skills">
+                    <div class="detalles">
+                        <span>Html, Css, Javascript, SQL</span>
+                    </div>
+    
+                    <div class="barra">
+                        <div id="html-barra"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
     <div class="education contenedor" id="news">
         <section class="contenedor-section" id="news">
             <div class="sub-titulo">
@@ -313,6 +420,7 @@
         </section>
     </div>
 
+
     <div class="contact">
         <section class="contenedor-section" id="contact">
             <div class="contact-title">
@@ -352,7 +460,9 @@
     </div>
 
     <div class="pie-pagina contenedor">
+        <p>Copyright 2022 - @joseperez</p>
+        <li><a href="#profile"><i class="fa-solid fa-circle-chevron-up"></i></a></li>
+        
     </div>
 </body>
-
 </html>

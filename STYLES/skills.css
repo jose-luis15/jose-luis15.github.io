@@ -1,0 +1,115 @@
+.habilidades{
+    background-color: var(--fondo-color);
+}
+
+.caja-padre{
+    width: 40%;
+    min-width: 590px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: #035a5d;
+}
+
+
+.habilidades a{
+    color: var(--hover-color);
+    font-weight: 550;
+    font-size: 22px;
+    pointer-events: none;
+}
+
+/* HACER LA BARRA DE SKILLS */
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.barra{
+    background-color: white;
+    border-radius: 5px;
+}
+
+.barra div{
+    width: 0;
+    height: 24px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #035a5d;
+}
+
+/* ANIMACIÓN */
+#ingles-barra{
+    animation: ingles-bar 2s forwards;
+}
+
+@keyframes ingles-bar{
+    100%{
+        width: 55%;
+    }
+}
+
+#portugues-barra{
+    animation: portugues-bar 2s forwards;
+}
+
+@keyframes portugues-bar{
+    100%{
+        width: 80%;
+    }
+}
+
+#arcgis-barra{
+    animation: arcgis-bar 2s forwards;
+}
+
+@keyframes arcgis-bar{
+    100%{
+        width: 75%;
+    }
+}
+
+#autocad-barra{
+    animation: autocad-bar 2s forwards;
+}
+
+@keyframes autocad-bar{
+    100%{
+        width: 40%;
+    }
+}
+
+#microsoft-barra{
+    animation: microsoft-bar 2s forwards;
+}
+
+@keyframes microsoft-bar{
+    100%{
+        width: 70%;
+    }
+}
+
+#python-barra{
+    animation: python-bar 2s forwards;
+}
+
+@keyframes python-bar{
+    100%{
+        width: 70%;
+    }
+}
+
+#html-barra{
+    animation: html-bar 2s forwards;
+}
+
+@keyframes html-bar{
+    100%{
+        width: 50%;
+    }
+}
