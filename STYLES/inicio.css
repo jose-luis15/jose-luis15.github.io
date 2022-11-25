@@ -38,10 +38,11 @@
     font-weight: 500; 
 }
 
-.banner-redes i{
+.banner-redes a{
     padding: 0 10px;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 3%;
+    color: var(--text-color-inverse);
 }
 
 .banner-line{
@@ -60,7 +61,7 @@
 }
 
 .profile-link:hover,
-.banner-redes i:hover,
+.banner-redes a:hover,
 .profile-flecha i:hover{
     color: var(--hover-color);
     transition: color 0.3s;
@@ -78,8 +79,8 @@
         font-size: 40px;
     }
     
-    .banner-redes i{
-        font-size: 30px;
+    .banner-redes a{
+        font-size: 35px;
         margin-bottom: 4%;
     }
     
